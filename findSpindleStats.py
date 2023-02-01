@@ -28,7 +28,7 @@ outputFile = 'SpindleStats.xlsx'
 #excel writer complains the sheet doesn't already exist
 if not os.path.exists(outputFile):
     with pd.ExcelWriter(outputFile, engine="openpyxl", mode='w') as writer:
-        df = pd.DataFrame({'Info': ['Author: Lerner Lab', 'Spindle Density Tables']})
+        df = pd.DataFrame({'Info': ['Author: Sleep Lab', 'Spindle Density Tables']})
         df.to_excel(writer, sheet_name='Title', index=False)
     
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
